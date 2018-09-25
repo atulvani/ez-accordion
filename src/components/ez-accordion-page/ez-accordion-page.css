@@ -1,0 +1,32 @@
+#accordion-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+ez-accordion,
+ez-accordion-title,
+ez-accordion-body {
+    display: block;
+}
+
+ez-accordion {
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(50% - 2rem);
+}
+
+ez-accordion.horizontal ez-accordion-title,
+ez-accordion.horizontal ez-accordion-body {
+    display: inline-block;
+}
+
+ez-accordion.horizontal ez-accordion-title {
+    transform: rotate(-90deg);
+}
+
+ez-accordion-body:not(.active) {
+    display: none !important;
+}
